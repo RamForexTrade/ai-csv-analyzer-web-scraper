@@ -1,0 +1,39 @@
+# AI-Powered CSV Data Analyzer - Production Dependencies
+# Optimized for Streamlit Cloud deployment
+
+# Core Streamlit and data processing
+streamlit>=1.32.0
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+plotly>=5.15.0
+python-dotenv>=1.0.0
+
+# AI/ML and API clients
+requests>=2.31.0
+openai>=1.12.0
+anthropic>=0.21.0
+groq>=0.4.0
+
+# Web scraping and research
+tavily-python>=0.3.0
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Data processing and utilities
+openpyxl>=3.1.0  # For Excel file support
+xlrd>=2.0.0     # For legacy Excel files
+asyncio-timeout>=4.0.0
+
+# Optional ML/Analytics (uncomment if needed)
+# scikit-learn>=1.3.0
+# seaborn>=0.12.0
+# matplotlib>=3.7.0
+
+# Development and debugging (remove for production)
+# jupyter>=1.0.0
+# ipython>=8.0.0
+
+# Production optimizations
+gunicorn>=21.2.0  # If using custom deployment
+uvicorn>=0.23.0   # Alternative ASGI server
